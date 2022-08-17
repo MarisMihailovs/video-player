@@ -35,7 +35,8 @@ body {
 
 video {
   border-radius: 5px;
-
+  width: 100%;
+  height: auto;
 }
 
 /* Containers */
@@ -112,11 +113,11 @@ video {
 
 /* Play & Pause */
 .play-controls {
+
   margin-right: 15px;
 }
 
-.fa-play:hover,
-.fa-pause:hover {
+.material-symbols-outlined:hover {
   color: var(--primary-color);
   cursor: pointer;
 }
@@ -133,7 +134,7 @@ video {
   border-radius: 10px;
   position: relative;
   top: -21px;
-  left: 50px;
+  left: 30px;
   cursor: pointer;
 }
 
@@ -158,14 +159,13 @@ video {
 .speed,
 .time {
   position: relative;
-  top: 10px;
+  top: 2.5px;
 }
 
 /* Playback Speed */
 .speed {
   margin-right: 15px;
 }
-
 
 
 select {
@@ -207,6 +207,11 @@ select>option {
 
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
+
+  .player {
+    min-width: 0;
+    max-width: 90vw;
+  }
 
 
   .fas {
