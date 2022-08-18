@@ -1,5 +1,5 @@
 :root {
-  --primary-color: dodgerblue;
+  --primary-color: rgb(116, 61, 167);
   --font-color: white;
 }
 
@@ -186,7 +186,7 @@ option {
 
 
 select {
-
+  background: transparent;
   color: var(--font-color);
   border: none;
   font-size: 18px;
