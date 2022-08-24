@@ -60,8 +60,6 @@ function setProgress(e) {
 
 let lastVolume = 1;
 
-
-
 // volume bar
 function changeVolume(e) {
     let volume = e.offsetX / volumeRange.offsetWidth;
@@ -104,11 +102,7 @@ let fullscreen = false;
 
 //toggle fullscreen
 function toggleFullscreen() {
-    if (!fullscreen) {
-        openFullscreen(player);
-    } else {
-        closeFullscreen();
-    }
+    !fullscreen ? openFullscreen(player) : closeFullscreen();
     fullscreen = !fullscreen;
 }
 
